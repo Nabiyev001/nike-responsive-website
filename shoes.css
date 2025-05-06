@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  background-color: #7360DF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #AD1DA3;
+  border-radius: 10px;
+}
+
+.navbar {
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 16px 9px 32px -3px rgba(0, 0, 0, 0.17);
+  font-family: "Playfair Display";
+}
+.navbar h1 {
+  font-size: 40px;
+  color: #c72092;
+}
+.navbar h1 span {
+  color: #6c14d0;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-family: Roboto;
+}
+
+.nav-link {
+  position: relative;
+  transition: 0.6s ease-out;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c72092;
+  transition: 0.5s ease-out;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+.nav-link:hover {
+  color: #c72092;
+}
+
+.navbar-nav i:hover {
+  color: #c72092;
+}
+
+.hero {
+  background-image: url(bg1.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero h1 {
+  font-family: Pacifico;
+  color: #c72092;
+}
+.hero button {
+  padding: 4px 30px;
+  color: white;
+  font-size: 20px;
+  background-color: #c72092;
+}
+.hero button:hover i {
+  transform: translateX(10px);
+}
+.hero button i {
+  transition: 0.7s;
+}
+
+.products {
+  font-family: Roboto;
+}
+.products h1 {
+  font-weight: 500;
+  color: #c72092;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  box-shadow: 2px 7px 36px -3px rgba(199, 32, 146, 0.6);
+  border: 2px solid #c72092;
+}
+.card:hover .card-icons {
+  transform: translateX(20px);
+  opacity: 1;
+}
+.card:hover .crd-head-image {
+  transform: scale(1.1);
+}
+.card .crd-head-image {
+  transition: 0.5s;
+}
+.card button {
+  padding: 8px 30px;
+  border: 1px solid black;
+  background-color: #c72092;
+  color: white;
+  transition: 0.5s;
+}
+.card button:hover {
+  transform: scale(1.1);
+}
+
+.card-icons {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  opacity: 0;
+  transition: 0.4s;
+  color: red;
+}
+.card-icons a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+.card-icons a i {
+  transition: 0.4s;
+}
+.card-icons a i:hover {
+  color: #c72092;
+}
+
+.web-about span {
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.web-about .small-imgs {
+  width: 150px;
+  height: 150px;
+}
+.web-about .small-imgs img {
+  opacity: 0.7;
+  border: 2px solid #c72092;
+  border-radius: 10px;
+  box-shadow: 2px 7px 36px -3px rgba(199, 32, 146, 0.6);
+  transition: 0.4s all ease-out;
+}
+.web-about .small-imgs img:hover {
+  transform: scale(1.1);
+  margin-top: 7px;
+  opacity: 1;
+}
+.web-about .main-img {
+  border: 2px solid #c72092;
+  border-radius: 10px;
+  box-shadow: 2px 7px 36px -3px rgba(199, 32, 146, 0.6);
+}
+.web-about .web-text {
+  border: 2px solid #c72092;
+  border-radius: 10px;
+}
+
+button {
+  padding: 8px 30px;
+  border: 2px solid #c72092;
+  transition: 0.5s;
+  color: black;
+}
+button:hover {
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  color: white;
+}
+
+.reviews span {
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.reviews .review-card {
+  height: 18rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+.reviews .review-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.our-service span {
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.our-service img {
+  width: 200px;
+  height: 200px;
+}
+
+.login span {
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-wrapper {
+  background-image: url(loging_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.login-wrapper img {
+  height: 600px;
+}
+.login-wrapper .form-wrapper h1 {
+  font-weight: 630;
+  font-family: "Playfair Display";
+}
+.login-wrapper .form-wrapper .form-content {
+  line-height: 30px;
+}
+.login-wrapper .form-wrapper form input {
+  height: 2.27rem;
+  border: 2px solid #c72092;
+  border-radius: 5px;
+  outline: none;
+}
+.login-wrapper .form-wrapper button {
+  font-size: 25px;
+  font-weight: 500;
+}
+.login-wrapper .form-wrapper .social-icons i {
+  transition: 0.5s;
+}
+.login-wrapper .form-wrapper .social-icons i:hover {
+  transform: scale(1.1);
+  margin: 2px;
+  color: #c72092;
+}
+
+.footer-wrapper h1 {
+  color: #1C0080;
+}
+.footer-wrapper button {
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  padding: 4px 8px;
+}
+.footer-wrapper a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=shoes.css.map */

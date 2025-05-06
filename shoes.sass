@@ -1,0 +1,227 @@
+*
+    margin: 0
+    padding: 0
+    color: #000
+
+$NavF: "Playfair Display"
+$Nike: Pacifico
+$BrandF: Roboto
+$mainC: #c72092
+
+::-webkit-scrollbar
+    background-color: #7360DF
+::-webkit-scrollbar-thumb
+    background-color: #AD1DA3
+    border-radius: 10px
+
+.navbar
+    height: 70px
+    position: fixed
+    z-index: 1
+    box-shadow: 16px 9px 32px -3px rgba(0, 0, 0, 0.17)
+    font-family: $NavF
+    h1
+        font-size: 40px
+        color: $mainC
+        span
+            color: #6c14d0
+            text-decoration: underline
+   
+.navbar-brand
+    font-family: $BrandF
+.nav-link
+    position: relative
+    transition: 0.6s ease-out
+    &::before
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 0
+        height: 2px
+        background-color: $mainC
+        transition: 0.5s ease-out
+    &:hover::before
+        width: 100%
+    &:hover
+        color: $mainC
+.navbar-nav
+    i
+        transition: 0.5s
+     &:hover
+        color: $mainC
+.hero
+
+    background-image: url(bg1.png)
+    background-size: cover
+    background-position: center
+    h1
+        font-family: $Nike
+        color: $mainC
+
+    button
+        padding: 4px 30px
+        color: white
+        font-size: 20px
+        background-color: $mainC
+        &:hover i
+            transform: translateX(10px)
+        i
+            transition: 0.7s
+.products
+    font-family: $BrandF
+    h1
+        font-weight: 500
+        color: $mainC
+.card
+    display: flex
+    align-items: center
+    width: 100%
+    height: 30rem
+    position: relative
+    box-shadow: 2px 7px 36px -3px rgba(199,32,146,0.6)
+    border: 2px solid $mainC
+    &:hover .card-icons
+        transform: translateX(20px)
+        opacity: 1
+    &:hover .crd-head-image
+        transform: scale(1.1)
+    .crd-head-image
+        transition: 0.5s
+    button
+        padding: 8px 30px
+        border: 1px solid black
+        background-color: $mainC
+        color: white
+        transition: 0.5s
+        &:hover
+            transform: scale(1.1)
+
+.card-icons
+    position: absolute
+    left: 0px
+    top: 20px
+    opacity: 0
+    transition: 0.4s
+    color: red
+    a
+        width: 40px
+        height: 40px
+        border: 2px solid black
+        margin-bottom: 5px
+        i
+            transition: 0.4s
+            &:hover
+                color: $mainC
+// Web about start
+.web-about
+
+    span
+        background: linear-gradient(to right, $mainC, #6c14d0)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    .small-imgs
+        width: 150px
+        height: 150px
+
+        img
+            opacity: 0.7
+            border: 2px solid $mainC
+            border-radius: 10px
+            box-shadow: 2px 7px 36px -3px rgba(199,32,146,0.6)
+            transition: 0.4s all ease-out
+            &:hover
+                transform: scale(1.1)
+                margin-top: 7px
+                opacity: 1
+    .main-img
+        border: 2px solid $mainC
+        border-radius: 10px
+        box-shadow: 2px 7px 36px -3px rgba(199,32,146,0.6)
+    .web-text
+        border: 2px solid $mainC
+        border-radius: 10px
+button
+    padding: 8px 30px
+    border: 2px solid $mainC
+    transition: 0.5s
+    color: black
+    &:hover
+        background: linear-gradient(to right, $mainC, #6c14d0)
+        color: white
+
+// Web about end
+    //! Reviews start
+
+    //! Reviews end
+//? Review start
+.reviews
+    span
+        background: linear-gradient(to right, $mainC, #6c14d0)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    .review-card
+        height: 18rem
+        background-color: rgba(0,0 ,0 ,0.1 )
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px
+        img
+            width: 60px
+            height: 60px
+//? Review end
+    // *Service start
+.our-service
+    span
+        background: linear-gradient(to right, $mainC, #6c14d0)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    img
+        width: 200px
+        height: 200px
+    // *Service end
+// !Login start
+.login
+    span
+        background: linear-gradient(to right, $mainC, #6c14d0)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+.login-wrapper
+    background-image: url(loging_bg.png)
+    background-size: cover
+    background-position: center
+    img
+        height: 600px
+    .form-wrapper
+        h1
+            font-weight: 630
+            font-family: $NavF
+        .form-content
+            line-height: 30px
+        form
+            input
+                height: 2.27rem
+                border: 2px solid $mainC
+                border-radius: 5px
+                outline: none
+        button
+            font-size: 25px
+            font-weight: 500
+        .social-icons
+            i
+                transition: 0.5s
+                &:hover
+                    transform: scale(1.1)
+                    margin: 2px
+                    color: $mainC
+
+// !Login end
+// footer start
+.footer-wrapper
+    h1
+        color: #1C0080
+    button
+        background: linear-gradient(to right, $mainC, #6c14d0)
+        padding: 4px 8px
+    a
+        text-decoration: none
+        color: black
+// footer end
